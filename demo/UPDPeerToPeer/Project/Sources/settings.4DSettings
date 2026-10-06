@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="9">
+	<com.4d>
+		<server>
+			<network>
+				<options use_legacy_network_layer="false" use_quic_network_layer="true"/>
+			</network>
+		</server>
+		<general startup_environnement="1"/>
+		<interface>
+			<developper display_toolbar="true"/>
+			<user/>
+		</interface>
+	</com.4d>
+</preferences>
