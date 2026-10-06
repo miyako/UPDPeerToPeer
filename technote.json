@@ -26,7 +26,8 @@
     "colors": [],
     "fonts": [
       "SegoeUIHistoric"
-    ]
+    ],
+    "indent_by_x": true
   },
   "bullets": {
     "fonts": [
@@ -38,7 +39,7 @@
     "min_x": 88
   },
   "table": {
-    "size": 9
+    "size": null
   },
   "$comment": "Document-specific settings. Run `make inspect` and review; see tools/config.py for all keys and defaults."
 }
