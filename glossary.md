@@ -37,8 +37,40 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
+| UDP socket | UDPソケット | Class names `UDPSocket` / `UDPEvent` stay in English |
+| peer | ピア | |
+| peer-to-peer (P2P) | ピアツーピア（P2P） | |
+| peer discovery | ピア検出 | "Peer Discovery system" → ピア検出システム |
+| discovery port | ピア検出用ポート | |
+| broadcast | ブロードキャスト | |
+| broadcast address | ブロードキャストアドレス | |
+| announcement / announce | アナウンス | Message type `ANNOUNCE` stays as is |
+| probe | プローブ | Message type `PROBE` stays as is |
+| pruning / prune | 削除（プルーニング） | First occurrence with English; then 削除 |
+| stale (peer) | 古くなった（ピア） | |
+| TTL | TTL | |
+| shared collection / shared object | 共有コレクション / 共有オブジェクト | |
+| shared constructor | 共有コンストラクター | |
+| constructor | コンストラクター | |
+| property | プロパティ | |
+| signal | シグナル | |
+| Use block | Useブロック | |
+| preemptive execution | プリエンプティブ実行 | |
+| rendezvous server | ランデブーサーバー | |
+| listbox column expression | リストボックスの列の式 | |
+| "time ago" display | 「〜前」の表示 | |
+| ticks | ティック | |
+| Technical Note | テクニカルノート | |
+| Prerequisites & Requirements | 前提条件と要件 | |
+| Abstract / Introduction / Conclusion | 概要 / はじめに / まとめ | |
+| Supporting Project Methods | 補助プロジェクトメソッド | |
+| Demo Application | デモアプリケーション | |
+| Announce / Close button, Local Info field | Announceボタン / Closeボタン / Local Infoフィールド | Demo UI labels kept in English until the demo is localised (Phase 5) |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Anouar Moustarih | Anouar Moustarih | Author name kept in Latin script |
+| Quality Support Engineer, 4D Morocco | 4D Morocco 品質サポートエンジニア | |
+| BitTorrent | BitTorrent | |
