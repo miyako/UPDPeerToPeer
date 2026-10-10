@@ -26,7 +26,7 @@ flowchart LR
    - the 4D project → `demo/<ProjectName>/` (the folder that contains `Project/`)
 3. Start the agent. Use either:
    - **Locally** (Copilot CLI or the Copilot app, recommended): open the repository and prompt:
-     > Localise this technical note and its demo into Japanese. Follow .github/copilot-instructions.md and stop at every checkpoint for my review.
+     > Localise this technical note and its demo into Japanese. Follow AGENTS.md and stop at every checkpoint for my review.
    - **Cloud agent:** open an issue with the **Localisation request** form and assign it to Copilot.
      The agent works in a pull request. Reply in the PR to give directions at each checkpoint.
 4. Review at each **checkpoint** (see below). Edit files directly or tell the agent what to change.
