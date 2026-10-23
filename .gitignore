@@ -8,3 +8,10 @@ demo/*/Data/
 demo/*/Logs/
 demo/*/userPreferences.*/
 demo/*/Project/DerivedData/
+
+# Tools provisioned by the 4D skills (see the 4dtools skill)
+/tools/4dcatalog/
+/tools/4dform/
+/tools/4dlsp/
+/tools/4dlang/
+/tools/4dcli/
