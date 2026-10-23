@@ -65,7 +65,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Abstract / Introduction / Conclusion | 概要 / はじめに / まとめ | |
 | Supporting Project Methods | 補助プロジェクトメソッド | |
 | Demo Application | デモアプリケーション | |
-| Announce / Close button, Local Info field | Announceボタン / Closeボタン / Local Infoフィールド | Demo UI labels kept in English until the demo is localised (Phase 5) |
+| Announce / Close button, Local Info field | 「アナウンス」ボタン / 「閉じる」ボタン / 「ローカル情報」フィールド | Demo UI labels; must match `Resources/ja.lproj/PeerFinderJA.xlf` |
 
 ## Proper nouns in examples
 
