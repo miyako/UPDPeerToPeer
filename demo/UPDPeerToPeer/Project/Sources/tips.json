@@ -1,0 +1,5 @@
+{
+	"broadcast": "Milliseconds between presence broadcasts (≥ 200ms)\r",
+	"peer timeout": "Seconds without a ping before peer is removed (≥ 1)",
+	"UDP Port": "Listening port for discovery & chat (1024–65535)"
+}

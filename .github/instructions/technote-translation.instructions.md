@@ -39,7 +39,7 @@ The workflow and checkpoints are in `AGENTS.md`. This file is a technical refere
 | `heading.fonts` | Substrings of font names that mark headings; with `heading.min_size` |
 | `heading.levels_by_x` | `{"x": level}`: heading level by left x (nearest within 6 pt); otherwise `default_level` |
 | `code.colors` | Hex colours of syntax-highlighted code spans (Word exports code as coloured text) |
-| `code.fonts` | Monospace font substrings; `code.indent` = minimum x offset for code continuation lines |
+| `code.fonts` | Monospace font substrings; `code.indent` = minimum x offset for code continuation lines; `code.indent_by_x` = indent code by the rank of each line's x position (PDFs that position code lines instead of using spaces). Lines in a code font are always code, and blank lines in a code font do not split a block |
 | `bullets.fonts` / `strip_fonts` | Glyph fonts that mark list items / fonts of separator spans to drop |
 | `caption.italic`, `caption.min_x` | Captions are italic lines starting right of `min_x` |
 | `table.size` | Font size used only by table cells (or null) |

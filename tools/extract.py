@@ -68,6 +68,12 @@ def is_code_font(span):
     return any(f in font_of(span) for f in CODE_FONTS)
 
 
+def is_code_font_line(item, blank_ok=False):
+    spans = [s for s in item["spans"] if s["text"].strip() or blank_ok]
+    return bool(spans) and all(is_code_font(s) for s in spans) if blank_ok else any(
+        is_code_font(s) for s in spans)
+
+
 def is_code_line(item, body_x):
     if any((s["color"] in CODE_COLORS or is_code_font(s)) and s["text"].strip() for s in item["spans"]):
         return True
@@ -125,12 +131,27 @@ def code_lang(lines):
     return "4d"
 
 
-def code_line_text(item, min_x):
+def code_line_text(item, min_x, x_levels=None):
     raw = "".join(s["text"] for s in item["spans"]).rstrip()
     stripped = raw.lstrip(" ")
     spaces = len(raw) - len(stripped)
-    level = spaces // 4 if spaces >= 4 else (1 if item["x"] > min_x + 10 else 0)
+    if spaces >= 4:
+        level = spaces // 4
+    elif x_levels:
+        level = sum(1 for x in x_levels if x < item["x"] - 3)
+    else:
+        level = 1 if item["x"] > min_x + 10 else 0
     return "    " * level + stripped
+
+
+def x_levels_of(items):
+    """Distinct x positions of a code block (3 pt tolerance), for PDFs that position code lines instead of
+    indenting them with spaces; enabled by code.indent_by_x."""
+    levels = []
+    for x in sorted(it["x"] for it in items if it["text"].strip()):
+        if not levels or x - levels[-1] > 3:
+            levels.append(x)
+    return levels
 
 
 def extract_body(doc):
@@ -160,7 +181,8 @@ def extract_body(doc):
         items = state["code"]
         if items:
             min_x = min(it["x"] for it in items if it["text"].strip())
-            lines = [code_line_text(it, min_x) if it["text"].strip() else "" for it in items]
+            x_levels = x_levels_of(items) if CFG["code"].get("indent_by_x") else None
+            lines = [code_line_text(it, min_x, x_levels) if it["text"].strip() else "" for it in items]
             while lines and not lines[-1]:
                 lines.pop()
             out.append(f"```{code_lang(lines)}\n" + "\n".join(lines) + "\n```\n")
@@ -192,7 +214,8 @@ def extract_body(doc):
             size = round(max(s["size"] for s in it["spans"]))
 
             if not text.strip():
-                if state["code"] and it["x"] >= body_x + CFG["code"]["indent"]:
+                if state["code"] and (it["x"] >= body_x + CFG["code"]["indent"]
+                                      or is_code_font_line(it, blank_ok=True)):
                     state["code"].append(it)
                 else:
                     flush_code()
@@ -244,7 +267,7 @@ def extract_body(doc):
                 prev = it
                 continue
 
-            if it["x"] != body_x and is_code_line(it, body_x):
+            if is_code_font_line(it) or (it["x"] != body_x and is_code_line(it, body_x)):
                 flush_para(); flush_bullets()
                 state["code"].append(it)
                 prev = it
