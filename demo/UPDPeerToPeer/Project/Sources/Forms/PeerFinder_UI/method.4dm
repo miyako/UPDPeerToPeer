@@ -53,6 +53,7 @@ Case of
 		End if 
 		
 	: (Form event code:C388=On Unload:K2:2)
+		cs:C1710.Window.me.setDemoWindow(0)
 		KILL WORKER:C1390("PeerDiscoveryWorker")
 		KILL WORKER:C1390("p2pworker")
 		

@@ -2,8 +2,6 @@
 
 By Anouar Moustarih, Quality Support Engineer, 4D Morocco
 
-Technical Note 25-12
-
 ## Abstract
 
 The User Datagram Protocol (UDP) serves as a lightweight, connectionless transport layer protocol in the TCP/IP suite, prioritizing speed and low overhead over reliability by omitting handshakes and retransmissions. UDP suits real-time applications where occasional packet loss is acceptable, such as video streaming or gaming, by allowing multicast and broadcast transmissions to multiple recipients efficiently. Peer-to-peer (P2P) systems built on UDP leverage these traits for decentralized discovery, where nodes broadcast presence messages to locate others without central coordination, reducing latency and infrastructure needs. Real-world use cases include file-sharing networks like BitTorrent for efficient content distribution, multiplayer games for quick player matching, IoT device coordination in smart homes for automatic service detection, and collaborative tools like video conferencing apps for local participant finding, all benefiting from UDP's simplicity in handling dynamic connections.
