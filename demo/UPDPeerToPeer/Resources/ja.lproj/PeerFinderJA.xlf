@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="PeerFinder" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Peer_WindowTitle" resname="Peer_WindowTitle">
+				<source>P2P Finder</source>
+				<target>P2Pファインダー</target>
+			</trans-unit>
+			<trans-unit id="Peer_Title" resname="Peer_Title">
+				<source>4D UDP Peer Finder</source>
+				<target>4D UDP ピアファインダー</target>
+			</trans-unit>
+			<trans-unit id="Peer_Announce" resname="Peer_Announce">
+				<source>Announce</source>
+				<target>アナウンス</target>
+			</trans-unit>
+			<trans-unit id="Peer_LocalInfo" resname="Peer_LocalInfo">
+				<source>Local Info</source>
+				<target>ローカル情報</target>
+			</trans-unit>
+			<trans-unit id="Peer_ColHostname" resname="Peer_ColHostname">
+				<source>Hostname</source>
+				<target>ホスト名</target>
+			</trans-unit>
+			<trans-unit id="Peer_ColIP" resname="Peer_ColIP">
+				<source>IP</source>
+				<target>IPアドレス</target>
+			</trans-unit>
+			<trans-unit id="Peer_ColLastSeen" resname="Peer_ColLastSeen">
+				<source>Last Seen</source>
+				<target>最終確認</target>
+			</trans-unit>
+			<trans-unit id="Peer_ColVersion" resname="Peer_ColVersion">
+				<source>Version</source>
+				<target>バージョン</target>
+			</trans-unit>
+			<trans-unit id="Peer_Peers" resname="Peer_Peers">
+				<source>Peers</source>
+				<target>ピア</target>
+			</trans-unit>
+			<trans-unit id="Peer_Restart" resname="Peer_Restart">
+				<source>Restart</source>
+				<target>再起動</target>
+			</trans-unit>
+			<trans-unit id="Peer_Close" resname="Peer_Close">
+				<source>Close</source>
+				<target>閉じる</target>
+			</trans-unit>
+			<trans-unit id="Peer_Log" resname="Peer_Log">
+				<source>Log</source>
+				<target>ログ</target>
+			</trans-unit>
+			<trans-unit id="Peer_PeerCount" resname="Peer_PeerCount">
+				<source>Peer count:</source>
+				<target>ピア数：</target>
+			</trans-unit>
+			<trans-unit id="Peer_Clear" resname="Peer_Clear">
+				<source>Clear</source>
+				<target>クリア</target>
+			</trans-unit>
+			<trans-unit id="Peer_AlertLogCleared" resname="Peer_AlertLogCleared">
+				<source>Log cleared.</source>
+				<target>ログをクリアしました。</target>
+			</trans-unit>
+			<trans-unit id="Peer_AlertStoppedCleanly" resname="Peer_AlertStoppedCleanly">
+				<source>Discovery stopped cleanly.</source>
+				<target>ピア検出を正常に停止しました。</target>
+			</trans-unit>
+			<trans-unit id="Peer_AlertWorkerKilled" resname="Peer_AlertWorkerKilled">
+				<source>Worker terminated forcefully.</source>
+				<target>ワーカーを強制終了しました。</target>
+			</trans-unit>
+			<trans-unit id="Peer_LocalInfoLine" resname="Peer_LocalInfoLine">
+				<source>ID: {id} | Name: {name} | IP: {ip} | {version}</source>
+				<target>ID: {id} | 名前: {name} | IP: {ip} | {version}</target>
+			</trans-unit>
+			<trans-unit id="Peer_SecondsAgo" resname="Peer_SecondsAgo">
+				<source>{n} seconds ago</source>
+				<target>{n}秒前</target>
+			</trans-unit>
+			<trans-unit id="Peer_MinutesAgo" resname="Peer_MinutesAgo">
+				<source>{n} minutes ago</source>
+				<target>{n}分前</target>
+			</trans-unit>
+			<trans-unit id="Peer_HoursAgo" resname="Peer_HoursAgo">
+				<source>{n} hours ago</source>
+				<target>{n}時間前</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -39,10 +39,10 @@ Case of
 		If (Form:C1466.signal#Null:C1517)
 			Form:C1466.signal.wait(5)
 			If (Form:C1466.signal.trigger())
-				ALERT:C41("Discovery stopped cleanly.")
+				ALERT:C41(Localized string("Peer_AlertStoppedCleanly"))
 			Else 
 				KILL WORKER:C1390("PeerDiscoveryWorker")
-				ALERT:C41("Worker terminated forcefully.")
+				ALERT:C41(Localized string("Peer_AlertWorkerKilled"))
 			End if 
 			Form:C1466.signal:=Null:C1517
 			Form:C1466.workerRunning:=False:C215

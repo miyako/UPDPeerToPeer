@@ -27,7 +27,7 @@
 		"onBoundVariableChange",
 		"onPageChange"
 	],
-	"windowTitle": "P2P Finder",
+	"windowTitle": ":xliff:Peer_WindowTitle",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -37,7 +37,7 @@
 			"objects": {
 				"titleText": {
 					"type": "text",
-					"text": "4D UDP Peer Finder",
+					"text": ":xliff:Peer_Title",
 					"top": 50,
 					"left": 50,
 					"width": 1160,
@@ -48,7 +48,7 @@
 				},
 				"btnStartDiscovery": {
 					"type": "button",
-					"text": "Announce",
+					"text": ":xliff:Peer_Announce",
 					"top": 114,
 					"left": 930,
 					"width": 100,
@@ -64,7 +64,7 @@
 				},
 				"lblLocalInfoTitle": {
 					"type": "text",
-					"text": "Local Info",
+					"text": ":xliff:Peer_LocalInfo",
 					"top": 114,
 					"left": 56,
 					"width": 104,
@@ -117,7 +117,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "Hostname",
+								"text": ":xliff:Peer_ColHostname",
 								"dataSource": "Header1",
 								"stroke": "automatic",
 								"textAlign": "automatic",
@@ -146,7 +146,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "IP",
+								"text": ":xliff:Peer_ColIP",
 								"dataSource": "Header2",
 								"stroke": "automatic"
 							},
@@ -161,7 +161,7 @@
 						{
 							"header": {
 								"name": "Header4",
-								"text": "Last Seen"
+								"text": ":xliff:Peer_ColLastSeen"
 							},
 							"name": "Column4",
 							"footer": {
@@ -173,7 +173,7 @@
 						{
 							"header": {
 								"name": "Header5",
-								"text": "Version"
+								"text": ":xliff:Peer_ColVersion"
 							},
 							"name": "Column5",
 							"footer": {
@@ -186,7 +186,7 @@
 				},
 				"tfPeersList": {
 					"type": "text",
-					"text": "Peers",
+					"text": ":xliff:Peer_Peers",
 					"top": 186,
 					"left": 55,
 					"width": 126,
@@ -196,7 +196,7 @@
 				},
 				"btnRestart": {
 					"type": "button",
-					"text": "Restart",
+					"text": ":xliff:Peer_Restart",
 					"top": 731,
 					"left": 1021,
 					"width": 111,
@@ -208,7 +208,7 @@
 				},
 				"btnStopDiscovery": {
 					"type": "button",
-					"text": "Close",
+					"text": ":xliff:Peer_Close",
 					"top": 114,
 					"left": 1055,
 					"width": 100,
@@ -234,7 +234,7 @@
 				},
 				"tfMessgeLog": {
 					"type": "text",
-					"text": "Log",
+					"text": ":xliff:Peer_Log",
 					"top": 523,
 					"left": 65,
 					"width": 171,
@@ -244,7 +244,7 @@
 				},
 				"lblPeerCount": {
 					"type": "text",
-					"text": "Peer count:",
+					"text": ":xliff:Peer_PeerCount",
 					"top": 555,
 					"left": 65,
 					"width": 72,
@@ -279,7 +279,7 @@
 				},
 				"btnClearLog": {
 					"type": "button",
-					"text": "Clear",
+					"text": ":xliff:Peer_Clear",
 					"top": 519,
 					"left": 779,
 					"width": 85,

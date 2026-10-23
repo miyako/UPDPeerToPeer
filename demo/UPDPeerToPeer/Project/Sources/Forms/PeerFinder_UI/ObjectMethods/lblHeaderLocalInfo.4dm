@@ -11,5 +11,10 @@ Case of
 		$version:=$systemInfo.osVersion  // Could come from your app metadata
 		
 		
-		Form:C1466.lblHeaderLocalInfo:="ID: "+$nodeID+" | Name: "+$nodeName+" | IP: "+$nodeIP+" | "+$version
+		var $line : Text:=Localized string("Peer_LocalInfoLine")
+		$line:=Replace string($line; "{id}"; $nodeID)
+		$line:=Replace string($line; "{name}"; $nodeName)
+		$line:=Replace string($line; "{ip}"; $nodeIP)
+		$line:=Replace string($line; "{version}"; $version)
+		Form:C1466.lblHeaderLocalInfo:=$line
 End case 

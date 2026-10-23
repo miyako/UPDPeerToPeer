@@ -10,4 +10,4 @@ Form:C1466.logText:=""
 Use (Storage:C1525)
 	Storage:C1525.logText:=New shared object:C1526("value"; "")
 End use 
-ALERT:C41("Log cleared.")
+ALERT:C41(Localized string("Peer_AlertLogCleared"))
